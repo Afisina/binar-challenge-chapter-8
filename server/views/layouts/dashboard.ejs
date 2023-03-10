@@ -2,22 +2,21 @@
 <html>
   <head>
     <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/client/public/css/dashboard.css" type="text/css" />
-    <a href="">
+    <link rel="stylesheet" href="../../public/css/dashboard.css" type="text/css" />
   </head>
   <body>
     <!-- Navbar here -->
-    <% include('../partials/navbar.ejs')
+    <% include('../partials/navbar.ejs') %>
     <!-- Card Container Here -->
     <div class="container-fluid">
-        <div class="container d-flex p-4 flex-column">
+      <div class="container d-flex p-4 flex-column">
         <!-- Content Title here -->
-        <h4><%= contentName %></h4>
+        <h4>Content</h4>
         <div class="container-fluid p-4 bg-white">
-            <!-- Content here -->
-            <%- body %>
+          <!-- Content here -->
+          <%- body %>
         </div>
-        </div>
+      </div>
     </div>
   </body>
 </html>
