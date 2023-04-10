@@ -34,6 +34,9 @@ app.use("/api", apiRouter);
 const swaggerUi = require("./server/routes/swagger-ui");
 app.use("/docs", swaggerUi);
 
+const routerDashboard = require("./server/routes/dashboard");
+app.get("/dashboard");
+
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}`);
 });

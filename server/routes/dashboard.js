@@ -1,4 +1,5 @@
-const router = require("express").Router();
+const express = require("express");
+const router = express.Router();
 const { dashboard } = require("../controllers");
 const layoutName = (name) => {
   return (req, res, next) => {
